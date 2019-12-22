@@ -12,17 +12,17 @@ from src.rename import reName2
 
 if __name__ == '__main__':
     # SP_function
-    # 'rename1'
-    # 'rename2'
-    # 'creat_xml'
-    # 'create_main'
+    # 'rename1' 对文件进行重命名，不判断后缀，生成指定后缀
+    # 'rename2' 对一个文件夹内不同后缀文件进行重命名
+    # 'creat_xml' 产生xml文件
+    # 'create_main' 对训练集和测试集进行随机分配
     SP_function = 'rename1'         # 输入运行的程序
 
     if SP_function == 'rename1':
         # copy the source folder and rename the file in it( ps: the suffix can be changed)
         # return the last count of the file
-        src = 'D:\\0_project\\mark_pic\\CreateXml\\data\\new\\sharp_r'  # 源图像路径
-        dst = 'D:\\0_project\\mark_pic\\CreateXml\\data\\new\\sharp_r1'  # 目标路径
+        src = '.\\data\\pic'    # 源图像路径
+        dst = '.\\output\\pic_re'  # 目标路径
         suf = '.jpg'  # 后缀
         cnt = 1  # 重命名计数起点
         cnt = reName1(src, dst, suf, cnt)

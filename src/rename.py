@@ -16,7 +16,7 @@ def reName1(src, dst, suf, cnt):
     # 判断路径是否存在
     srcIsExist = os.path.exists(src)
     if not srcIsExist:
-            print("src is not exist")
+            print("rename1: src is not exist")
 
     dstIsExit = os.path.exists(dst)         # 创建目标目录并拷贝
     if not dstIsExit:
@@ -34,7 +34,7 @@ def reName2(src, dst, suf_in1, suf_in2, cnt1, cnt2):
     # 判断路径是否存在
     srcIsExist = os.path.exists(src)
     if not srcIsExist:
-        print("src is not exist")
+        print("rename2: src is not exist")
     dstIsExit = os.path.exists(dst)  # 创建目标目录并拷贝
     if not dstIsExit:
         shutil.copytree(src, dst)
